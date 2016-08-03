@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>summer</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="80_83degres.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="my_scripts.js"></script>
+
+  
+   <!-- <script src="js/scripts.js"></script> -->
+ 
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+<ul>
+    <center><font size=""> <a href="#" class="dropbtn"></a></center>
+    </ul>
+  <center>
+<img class="shirts" src="IMG_4353.png" alt= "clothes" width="20" height="200"
+ style="width:20%">
+<img class="shirts" src="IMG_4352.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<img class="shirts" src="IMG_4350.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<img class="shirts" src="IMG_4348.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+
+<a class="w3-btn-floating" style="position:absolute;top:25%;left:0" onclick="plusDivsshirts(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:25%;right:0" onclick="plusDivsshirts(1)">❯</a>
+
+</center>
+
+</div>
+
+<script>
+var slideIndexshirts = 1;
+showDivsshirts(slideIndexshirts);
+
+function plusDivsshirts(n) {
+  showDivsshirts(slideIndexshirts += n);
+}
+
+function showDivsshirts(n) {
+  var i;
+  var x = document.getElementsByClassName("shirts");
+  if (n > x.length) {slideIndexshirts = 1}
+  if (n < 1) {slideIndexshirts = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexshirts-1].style.display = "block";
+}
+
+</script>
+
+</body>
+
+
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<body>
+  <center>
+<img class="mySlides" src="IMG_4320.png" alt= "clothes" width="20" height="200"
+ style="width:20%">
+<img class="mySlides" src="IMG_4319.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<img class="mySlides" src="IMG_4324.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<img class="mySlides" src="IMG_4325.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+ <img class="mySlides" src="IMG_4326.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+<img class="mySlides" src="IMG_4327.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+<img class="mySlides" src="IMG_4328.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+<img class="mySlides" src="IMG_4329.png"  alt= "clothes" width="20" height="200"
+style="width:20%"> 
+<img class="mySlides" src="IMG_4330.png"  alt= "clothes" width="20" height="200"
+style="width:20%">
+
+<a class="w3-btn-floating" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">❯</a>
+
+</center>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+</script>
+
+</body>
+
+
+  <div>
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</div>
+<body>
+  <center>
+<img class="shoes" src="IMG_4344.png" alt= "clothes" width="20" height="200"
+ style="width:20%">
+<img class="shoes" src="IMG_4343.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<img class="shoes" src="IMG_4342.png" alt= "clothes" width="20" height="200" 
+style="width:20%">
+<a class="w3-btn-floating" style="position:absolute;top:70%;left:0" onclick="plusDivsShoes(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:70%;right:0" onclick="plusDivsShoes(1)">❯</a>
+
+</center>
+
+</div>
+
+<script>
+var slideIndexShoes = 1;
+showDivsShoes(slideIndexShoes);
+
+function plusDivsShoes(n) {
+  showDivsShoes(slideIndexShoes += n);
+}
+
+function showDivsShoes(n) {
+  var i;
+  var x = document.getElementsByClassName("shoes");
+  if (n > x.length) {slideIndexShoes = 1}
+  if (n < 1) {slideIndexShoes = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndexShoes-1].style.display = "block";
+}
+
+</script>
+</html>
+
+
