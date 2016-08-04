@@ -7,8 +7,6 @@ var eighty = []
 var ninety = []
 
 
- Docs at http:simpleweatherjs.com
-
 /* Does your browser support geolocation? */
 if ("geolocation" in navigator) {
   $('.js-geolocation').show(); 
