@@ -62,15 +62,15 @@ li.dropdown {
 
 
 
-    <br>
-
+    
+/*
 <style>
 input[type=text], select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ffffff;
+    border: 1px solid #333;
     border-radius: 4px;
     box-sizing: border-box;
 }
@@ -95,8 +95,8 @@ div {
     background-color: #ffffff;
     padding: 20px;
 }*/
-</style>
+/*</style>
 
 
 </body>
-</html>
+</html>*/

@@ -5,22 +5,52 @@ var sixty = []
 var seventy = []
 var eighty = []
 var ninety = []
-var apikey = "a81f4d73eac00f15e8cac914a2569420";
-var zipcode = 76013;
 
 
+ Docs at http:simpleweatherjs.com
 
-// <a href="http://www.accuweather.com/en/us/new-york-ny/10007/weather-forecast/349727" class="aw-widget-legal">
-// <!--
-// By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http:www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http:www.accuweather.com/en/privacy.
-// -->
-// </a><div id="awtd1470156267998" class="aw-widget-36hour"  data-locationkey="" data-unit="f" data-language="en-us" data-useip="true" data-uid="awtd1470156267998" data-editlocation="true"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
-
-window.onload = function() {
-	$.ajax({
-		url: "http://api.openweathermap.org/data/2.5/forecast/weather?zip=" + zipcode + ",us&APPID=" + apikey, 
-		success: function(data){
-    	    var temp = data.list[0].main.temp
-	    }
-	});
+/* Does your browser support geolocation? */
+if ("geolocation" in navigator) {
+  $('.js-geolocation').show(); 
+} else {
+  $('.js-geolocation').hide();
 }
+
+/* Where in the world are you? */
+$('.js-geolocation').on('click', function() {
+  navigator.geolocation.getCurrentPosition(function(position) {
+    loadWeather(position.coords.latitude+','+position.coords.longitude); //load weather using your lat/lng coordinates
+  });
+});
+
+/* 
+* Test Locations
+* Austin lat/long: 30.2676,-97.74298
+* Austin WOEID: 2357536
+*/
+$(document).ready(function() {
+  loadWeather('Seattle',''); //@params location, woeid
+});
+
+function loadWeather(location, woeid) {
+  $.simpleWeather({
+    location: location,
+    woeid: woeid,
+    unit: 'f',
+    success: function(weather) {
+      html = '<h2><i class="icon-'+weather.code+'"></i> '+weather.temp+'&deg;'+weather.units.temp+'</h2>';
+      html += '<ul><li>'+weather.city+', '+weather.region+'</li>';
+      html += '<li class="currently">'+weather.currently+'</li>';
+      html += '<li>'+weather.alt.temp+'&deg;C</li></ul>';  
+      
+      $("#weather").html(html);
+    },
+    error: function(error) {
+      $("#weather").html('<p>'+error+'</p>');
+    }
+  });
+}
+
+
+
+
