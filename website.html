@@ -2,26 +2,29 @@
 <html>
 <head>
     <title> My Fashion</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    
-    <script src="my_scripts.js"></script>
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="signuptoday.css">
+    <link href="weather.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="weather.js"></script>
+    <script src="my_scripts.js"></script>
+
 </head>
 <body>
-    
-    <center><img src="http://data.tokyogirlsupdate.com/wp/wp-content/uploads/2014/07/fashion101-new-600x99.png"/></center>
-
-      
-    </div>
+<center><img src="http://data.tokyogirlsupdate.com/wp/wp-content/uploads/2014/07/fashion101-new-600x99.png"/></center>
+  </div>
   </li>
 </ul>
-
-    
-     <ul>
+<ul>
   <li><a class="active" href="#">Home</a></li>
   <li><a class="active" href="signuptoday.html">Sign Up Today</a></li>
   <li><a class="active" href="#">Winter</a></li>
@@ -34,6 +37,13 @@
  <ul>
   <center><font size=""> <a href="#" class="dropbtn"></a></center>
 </ul>
+
+<!-- Docs at http://http://simpleweatherjs.com -->
+<div id="weather"></div>
+<button class="js-geolocation" style="display: none;">Use Your Location</button>
+
+
+
 <center><h1>Classy</h1><center>
 
 <table width="500" border="0" cellpadding="5">
@@ -44,18 +54,70 @@
 <img src="images/IMG_4302.png" alt="description here"width="400" height="400" />
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks = 0 ;
+function AddClick(){
+Clicks = Clicks + 1;
+document.getElementById('CountedClicks').innerHTML =  Clicks ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
 <img src="images/IMG_4304.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks1 = 0 ;
+function AddClick1(){
+Clicks1 = Clicks1 + 1;
+document.getElementById('CountedClicks1').innerHTML =  Clicks1 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks1">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick1()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
 <img src="images/IMG_4369.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks2 = 0 ;
+function AddClick2(){
+Clicks2 = Clicks2 + 1;
+document.getElementById('CountedClicks2').innerHTML =  Clicks2 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks2">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick2()">Vote</button>
+</body>
+
+</html>
+
 </td>
 
 </tr>
@@ -72,18 +134,69 @@ Caption text centered under the image.
 <img src="images/IMG_4370.png" alt="description here"width="400" height="400" />
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks3 = 0 ;
+function AddClick3(){
+Clicks3 = Clicks3 + 1;
+document.getElementById('CountedClicks3').innerHTML =  Clicks3 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks3">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick3()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
 <img src="images/IMG_4371.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks4 = 0 ;
+function AddClick4(){
+Clicks4 = Clicks4 + 1;
+document.getElementById('CountedClicks4').innerHTML =  Clicks4 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks4">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick4()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
 <img src="images/IMG_4372.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks5 = 0 ;
+function AddClick5(){
+Clicks5= Clicks5 + 1;
+document.getElementById('CountedClicks5').innerHTML =  Clicks5 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks5">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick5()">Vote</button>
+</body>
+
+</html>
 </td>
 
 </tr>
@@ -98,25 +211,311 @@ Caption text centered under the image.
 <img src="images/IMG_4373.png" alt="description here"width="400" height="400" />
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks6 = 0 ;
+function AddClick6(){
+Clicks6 = Clicks6 + 1;
+document.getElementById('CountedClicks6').innerHTML =  Clicks6 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks6">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick6()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
-<img src="images/" alt="description here"width="400" height="400"/>
+<img src="images/IMG_4384.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks7 = 0 ;
+function AddClick7(){
+Clicks7= Clicks7 + 1;
+document.getElementById('CountedClicks7').innerHTML =  Clicks7 ;
+}
+// --></script>
+</head>
+
+<body>
+<span id="CountedClicks7">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick7()">Vote</button>
+</body>
+
+</html>
 </td>
 
 <td align="center" valign="center">
-<img src="images/" alt="description here"width="400" height="400"/>
+<img src="images/IMG_4385.png" alt="description here"width="400" height="400"/>
 <br />
 Caption text centered under the image.
-</td>
+<html>
+<head>
+<script>
+var Clicks8 = 0 ;
+function AddClick8(){
+Clicks8 = Clicks8 + 1;
+document.getElementById('CountedClicks8').innerHTML =  Clicks8 ;
+}
+</script>
+</head>
 
+<body>
+<span id="CountedClicks8">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick8()">Vote</button>
+</body>
+
+</html>
+</td>
+</table>
 </tr>
 
+ 
+
+ </table>
+Day</h1></center>
+<table width="500" border="0" cellpadding="5">
+
+<tr>
+<center><h1>Work 
+<td align="center" valign="center">
+<img src="images/IMG_4381.png" alt="description here"width="400" height="400" />
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks9 = 0 ;
+function AddClick9(){
+Clicks9 = Clicks9  + 1;
+document.getElementById('CountedClicks9').innerHTML =  Clicks9 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks9">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick9()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4383.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks10 = 0 ;
+function AddClick10(){
+Clicks10 = Clicks10 + 1;
+document.getElementById('CountedClicks10').innerHTML =  Clicks10 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks10">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick10()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4382.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks11 = 0 ;
+function AddClick11(){
+Clicks11 = Clicks11 + 1;
+document.getElementById('CountedClicks11').innerHTML =  Clicks11 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks11">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick11()">Vote</button>
+</body>
+
+</html>
+</td>
+</tr>
+</table>
+
+
+
+<table width="500" border="0" cellpadding="5">
+
+<tr>
+<center><h1>Work out</h1></center>
+<td align="center" valign="center">
+<img src="images/IMG_4378.png" alt="description here"width="400" height="400" />
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks12= 0 ;
+function AddClick12(){
+Clicks12 = Clicks12 + 1;
+document.getElementById('CountedClicks12').innerHTML =  Clicks12 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks12">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick12()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4379.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks13 = 0 ;
+function AddClick13(){
+Clicks13 = Clicks13 + 1;
+document.getElementById('CountedClicks13').innerHTML =  Clicks13 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks13">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick13()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4380.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks14 = 0 ;
+function AddClick14(){
+Clicks14 = Clicks14 + 1;
+document.getElementById('CountedClicks14').innerHTML =  Clicks14 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks14">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick14()">Vote</button>
+</body>
+
+</html>
+</td>
+</tr>
 </table>
 
  
+
+<table width="500" border="0" cellpadding="5">
+
+<tr>
+<center><h1>Formal Wear</h1></center>
+<td align="center" valign="center">
+<img src="images/IMG_4375.png" alt="description here"width="400" height="400" />
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks15 = 0 ;
+function AddClick15(){
+Clicks15 = Clicks15 + 1;
+document.getElementById('CountedClicks15').innerHTML =  Clicks15 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks15">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick15()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4376.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks16 = 0 ;
+function AddClick16(){
+Clicks16 = Clicks16 + 1;
+document.getElementById('CountedClicks16').innerHTML =  Clicks16 ;
+}
+</script>
+</head>
+
+<body>
+<span id="CountedClicks16">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick16()">Vote</button>
+</body>
+
+</html>
+</td>
+
+<td align="center" valign="center">
+<img src="images/IMG_4377.png" alt="description here"width="400" height="400"/>
+<br />
+Caption text centered under the image.
+<html>
+<head>
+<script>
+var Clicks17 = 0 ;
+function AddClick17(){
+Clicks17 = Clicks17 + 1;
+document.getElementById('CountedClicks17').innerHTML =  Clicks17 ;
+}
+</script>
+</head>
+<body>
+<span id="CountedClicks17">0 </span><br>
+<button style="background-color: Light blue" onclick="AddClick17()">Vote</button>
+</body>
+</html>
+
+
+
+
+</td>
+</tr>
+</table>
+
+
+
+
 
 
 
