@@ -2,17 +2,12 @@ body {
     background-color: #fff2e6;
 }
 
-ul, .mynav{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
-}
-
-
-ul {
-    background-color: white;
+    background-color: #333;
 }
 
 li {
@@ -101,9 +96,4 @@ div {
     /*background-color: blue;*/
     padding: 20px;
 }
-
-img {
-    border:black;
-}
-
 
