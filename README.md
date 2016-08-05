@@ -1,6 +1,7 @@
 #4seasons
-	project description:A blog that tells you the weather and show you  various outfits that would be appropiate for the temperature.You will be able to create their own blog and like and vote on others outfit.
-	(image file name.filetype)
+	A blog that tells you the weather and show you  various outfits that would be appropiate for the temperature.You will be able to create their own blog and like and vote on others outfit.
+	
+	(images/IMG_4284.png)
 
 ##Team
 	team members:Charlise Williams and Brianna Dixon
