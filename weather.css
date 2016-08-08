@@ -40,6 +40,9 @@ i {
   font-weight: normal;
   font-style: normal;
   line-height: 1.0;
+  /*position: absolute;
+    right: 450px;
+    top: -35%;*/
 }
 
 .icon-0:before { content: ":"; }
@@ -94,12 +97,13 @@ i {
 #weather h2 {
   margin: 0 0 8px;
   color: #f8b2e5;
-  font-size: 37px;
+  font-size: 28px;
   font-weight: 300;
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
   position: absolute; 
-  right: 0px;
+  right: 417px;
+  top:31%;
 }
 
 #weather ul {
@@ -114,7 +118,7 @@ i {
   display: inline-block;
   border-radius: 5px;
   position: absolute;
-    right: 0;
+    right: 562px;
 
 }
 
@@ -135,6 +139,6 @@ button {
 
 .locationbutton{
   position: absolute;
-    right: 0;
-    top: 47%;
+    right: 123px;
+    top: 38%;
 }
