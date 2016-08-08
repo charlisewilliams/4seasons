@@ -102,7 +102,7 @@ i {
   text-align: center;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
   position: absolute; 
-  right: 417px;
+  right: 594px;
   top:31%;
 }
 
@@ -118,7 +118,7 @@ i {
   display: inline-block;
   border-radius: 5px;
   position: absolute;
-    right: 562px;
+    right: 663px;
 
 }
 
@@ -139,6 +139,6 @@ button {
 
 .locationbutton{
   position: absolute;
-    right: 123px;
+    right: 294px;
     top: 38%;
 }
