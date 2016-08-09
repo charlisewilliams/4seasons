@@ -4,7 +4,7 @@
 	(images/IMG_4284.png)
 
 ##Team
-	team members:Charlise Williams and Brianna Dixon
+	Team members:Charlise Williams and Brianna Dixon
 
 ##User Stories
 	1.A user can create their own personalized blog
