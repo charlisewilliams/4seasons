@@ -24,15 +24,4 @@
 	1.Mobile friendly
 	2.Add more than 3 option for each category to vote from
 	3.Add access to buy the outfits that you want
-
-
-
-
-
-
-
-
- 
-
- ##Stretch
- To make life easier than trying to figure out what outfit would keep you warm for that certian day.
+	4.Create a page that goes with sign up
