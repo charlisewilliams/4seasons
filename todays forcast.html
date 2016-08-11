@@ -6,7 +6,8 @@
     <title>Todays Forcast</title>
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
-
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
+    <script src="weather.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -32,8 +33,25 @@
 </ul>
 
 <!-- Docs at http://http://simpleweatherjs.com -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- <p>Click the button to display an alert box:</p> -->
 <div id="weather"></div>
-<center><button class="js-geolocation locationbutton">Use Your Location</button></center>
+<center><button onclick="myFunction()">Use your location</button></center>
+
+<script>
+function myFunction() {
+    alert("Enter ZIP Code:");
+}
+</script>
+
+</body>
+</html>
+
+
 
 
 
@@ -223,8 +241,8 @@ style="width:20%">
 style="width:20%">
 <img class="shirts" src="images/IMG_4404.png"  alt= "clothes" width="20" height="200"
 style="width:20%">
-<a class="w3-btn-floating" style="position:absolute;top:46%;left:325px" onclick="plusDivsshirts(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:46%;right:325px" onclick="plusDivsshirts(1)">❯</a>
+<a class="w3-btn-floating" style="position:absolute;top:72%;left:325px" onclick="plusDivsshirts(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:72%;right:325px" onclick="plusDivsshirts(1)">❯</a>
 
 </center>
 
@@ -268,8 +286,8 @@ style="width:20%">
 style="width:20%">
  <img class="mySlides" src="images/IMG_4326.png"  alt= "clothes" width="20" height="200"
 style="width:20%">
-<img class="mySlides" src="images/IMG_4327.png"  alt= "clothes" width="20" height="200"
-style="width:20%">
+<!-- <img class="mySlides" src="images/IMG_4327.png"  alt= "clothes" width="20" height="200" -->
+<!-- style="width:20%"> -->
 <img class="mySlides" src="images/IMG_4328.png"  alt= "clothes" width="20" height="200"
 style="width:20%">
 <img class="mySlides" src="images/IMG_4329.png"  alt= "clothes" width="20" height="200"
@@ -288,8 +306,8 @@ style="width:20%">
 style="width:20%">
 <img class="mySlides" src="images/IMG_4514.png"  alt= "clothes" width="20" height="200"
 style="width:20%">
-<img class="mySlides" src="imagesIMG_4517.png"  alt= "clothes" width="20" height="200"
-style="width:20%">
+<!-- <img class="mySlides" src="imagesIMG_4517.png"  alt= "clothes" width="20" height="200" -->
+<!-- style="width:20%"> -->
 <img class="mySlides" src="images/IMG_4527.png"  alt= "clothes" width="20" height="200"
 style="width:20%">
 <img class="mySlides" src="images/IMG_4526.png"  alt= "clothes" width="20" height="200"
@@ -325,8 +343,8 @@ style="width:20%">
 
 
 
-<a class="w3-btn-floating" style="position:absolute;top:75%;left:317px" onclick="plusDivs(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:75%;right:317px" onclick="plusDivs(1)">❯</a>
+<a class="w3-btn-floating" style="position:absolute;top:104%;left:317px" onclick="plusDivs(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:104%;right:317px" onclick="plusDivs(1)">❯</a>
 
 </center>
 
@@ -441,8 +459,8 @@ style="width:20%">
 style="width:20%"> -->
 
 
-<a class="w3-btn-floating" style="position:absolute;top:115%;left:317px" onclick="plusDivsShoes(-1)">❮</a>
-<a class="w3-btn-floating" style="position:absolute;top:115%;right:317px" onclick="plusDivsShoes(1)">❯</a>
+<a class="w3-btn-floating" style="position:absolute;top:145%;left:317px" onclick="plusDivsShoes(-1)">❮</a>
+<a class="w3-btn-floating" style="position:absolute;top:145%;right:317px" onclick="plusDivsShoes(1)">❯</a>
 
 </center>
 
